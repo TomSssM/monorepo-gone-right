@@ -1,0 +1,20 @@
+{
+  "name": "metrika-test",
+  "version": "1.0.0",
+  "description": "Testing monorepo",
+  "private": true,
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --scope=@tomsssm/*",
+    "watch": "lerna run watch --parallel --scope=@tomsssm/*"
+  },
+  "keywords": [],
+  "author": "TomSssM",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "^4.3.5"
+  }
+}

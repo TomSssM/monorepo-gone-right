@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "lib": ["dom", "esnext"],
+        "module": "CommonJS",
+        "strict": true,
+        "allowJs": false,
+        "importHelpers": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "declaration": true,
+        "noImplicitReturns": true,
+        "preserveConstEnums": true
+    }
+}

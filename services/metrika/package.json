@@ -1,0 +1,22 @@
+{
+  "name": "metrika",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Yandex Metrika",
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:packages": "npm run build --prefix ../..",
+    "build:metrika": "tsc",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:metrika": "npm run build:metrika -- --watch",
+    "watch:packages": "npm run watch --prefix ../.."
+  },
+  "keywords": [],
+  "author": "TomSssM",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.3.5"
+  }
+}

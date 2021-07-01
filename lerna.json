@@ -1,0 +1,8 @@
+{
+  "packages": ["packages/*", "services/*"],
+  "ci": true,
+  "conventionalCommits": true,
+  "ignoreChanges": ["**/*.md", "**/__tests__/**"],
+  "exact": true,
+  "version": "independent"
+}

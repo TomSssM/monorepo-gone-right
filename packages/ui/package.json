@@ -1,0 +1,25 @@
+{
+  "name": "@tomsssm/ui",
+  "version": "1.0.0",
+  "description": "My client",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm run build -- --watch"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [ "dist/*", "dist/*/index.d.ts" ]
+    }
+  },
+  "keywords": [],
+  "author": "TomSssM",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
