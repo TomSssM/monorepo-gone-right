@@ -1,4 +1,4 @@
-class Client {
+export class Client {
     private name: string;
 
     constructor() {
@@ -9,5 +9,3 @@ class Client {
         return this.name;
     }
 }
-
-export default Client;

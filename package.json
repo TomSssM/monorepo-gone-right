@@ -7,6 +7,7 @@
     "./packages/*"
   ],
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build --scope=@tomsssm/*",
     "watch": "lerna run watch --parallel --scope=@tomsssm/*"
   },
