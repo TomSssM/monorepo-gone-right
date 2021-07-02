@@ -10,6 +10,7 @@
   },
   "exports": {
     "./package.json": "./package.json",
+    "./styles/*": "./styles/*",
     "./*": "./dist/*/index.js"
   },
   "typesVersions": {
