@@ -4,7 +4,7 @@
   "description": "My client",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp components/Link/Link.css ./dist/components/Link/ && cp components/Button/Button.css ./dist/components/Button/",
     "watch": "npm run build -- --watch",
     "prepare": "npm run build"
   },
@@ -25,6 +25,10 @@
   "author": "TomSssM",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^17.0.13",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }

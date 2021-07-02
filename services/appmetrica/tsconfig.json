@@ -4,9 +4,5 @@
         "outDir": "dist",
         "jsx": "react"
     },
-    "include": [
-        "./client/**/*",
-        "./components/**/*",
-        "./shared/**/*"
-    ]
+    "include": ["./client/**/*"]
 }

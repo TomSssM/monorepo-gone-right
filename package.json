@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --scope=@tomsssm/*",
-    "watch": "lerna run watch --parallel --scope=@tomsssm/*"
+    "build": "lerna run build --scope=@tomsssm/{ui,server}",
+    "watch": "lerna run watch --parallel --scope=@tomsssm/{ui,server}"
   },
   "keywords": [],
   "author": "TomSssM",
