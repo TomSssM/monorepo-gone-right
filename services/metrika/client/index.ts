@@ -1,4 +1,4 @@
-import { Client } from '@tomsssm/ui/client/Client';
+import { Client } from '@tomsssm/ui/client';
 
 const c = new Client();
 const name = c.sayName();

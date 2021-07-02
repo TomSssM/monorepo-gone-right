@@ -9,12 +9,15 @@
     "prepare": "npm run build"
   },
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*"
+    "./package.json": "./package.json",
+    "./*": "./dist/*/index.js"
   },
   "typesVersions": {
     "*": {
-      "*": [ "dist/*", "dist/*/index.d.ts" ]
+      "*": [
+        "dist/*",
+        "dist/*/index.d.ts"
+      ]
     }
   },
   "keywords": [],
