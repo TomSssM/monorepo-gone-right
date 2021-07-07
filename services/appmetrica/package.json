@@ -10,14 +10,23 @@
     "build:appmetrica": "webpack",
     "watch": "npm-run-all --parallel watch:*",
     "watch:appmetrica": "webpack serve --open # npm run build:appmetrica -- --watch",
-    "watch:packages": "npm run watch --prefix ../.."
+    "watch:packages": "npm run watch --prefix ../..",
+    "server": "python -m SimpleHTTPServer"
   },
   "keywords": [],
   "author": "TomSssM",
   "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0"
+  },
   "devDependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
+    "@types/react-helmet": "^6.1.1",
+    "@types/react-router-dom": "^5.1.7",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
     "npm-run-all": "^4.1.5",
@@ -27,9 +36,5 @@
     "webpack": "^5.42.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
   }
 }

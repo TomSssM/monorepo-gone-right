@@ -4,7 +4,8 @@
   "description": "My client",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc && cp components/Link/Link.css ./dist/components/Link/ && cp components/Button/Button.css ./dist/components/Button/",
+    "postbuild": "cp components/Link/Link.css ./dist/components/Link/ && cp components/Button/Button.css ./dist/components/Button/",
+    "build": "tsc",
     "watch": "npm run build -- --watch",
     "prepare": "npm run build"
   },
@@ -26,9 +27,19 @@
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-helmet": "^6.1.1",
+    "@types/react-router-dom": "^5.1.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
     "typescript": "^4.3.5"
   },
-  "dependencies": {
-    "react": "^17.0.2"
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0"
   }
 }

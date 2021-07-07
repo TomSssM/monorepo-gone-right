@@ -15,7 +15,14 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
+    symlinks: false,
+    alias: {
+      react: require.resolve('react'),
+      'react-dom': require.resolve('react-dom'),
+      'react-helmet': require.resolve('react-helmet'),
+      'react-router-dom': require.resolve('react-router-dom'),
+    },
+    extensions: ['.ts', '.tsx', '.jsx', '.js', '.json']
   },
   optimization: {
     moduleIds: 'deterministic',

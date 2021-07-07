@@ -4,5 +4,10 @@
   "conventionalCommits": true,
   "ignoreChanges": ["**/*.md", "**/__tests__/**"],
   "exact": true,
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--omit=peer"]
+    }
+  },
   "version": "independent"
 }
